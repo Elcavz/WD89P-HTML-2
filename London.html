@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CITIES │ London</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background: url(https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80);
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}   
+
+article {
+  float: left;
+  padding: 20px;
+  margin-left: 70px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  border: #dd3030 medium;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dd3030;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.London-img{
+    border-radius: 10px;
+}
+
+.London-text{
+    font-size: x-large;
+}
+
+.Cities{
+    font-size: medium;
+}
+
+.London:hover{
+    font-size: x-large;
+}
+
+.Paris:hover{
+    font-size: x-large;
+}
+
+.Tokyo:hover{
+    font-size: x-large;
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+    <span>
+        <img class="London-img" src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80" alt="London" width="750px" height="500px"> 
+        <h2>LONDON</h2>
+    </span>
+</header>
+    
+
+<section>
+  <nav>
+    <ul class="Cities">
+      <li><a class="London" href="London.html">London</a></li><br><br>
+      <li><a class="Paris" href="Paris.html">Paris</a></li><br><br>
+      <li><a class="Tokyo" href="Tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 class="London-text">London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p class="footer" style="font-size: 20px;"><b>KodeGo ~ Renz Sayaman</b></p>
+</footer>
+
+</body>
+</html>
+

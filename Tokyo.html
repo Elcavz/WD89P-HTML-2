@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CITIES │ Tokyo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background: url(https://wallpaper.dog/large/5488118.jpg);
+  background-size: 500%;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}   
+
+article {
+  float: left;
+  padding: 20px;
+  margin-left: 70px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  border: #dd3030 medium;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dd3030;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.London-img{
+    border-radius: 10px;
+}
+
+.London-text{
+    font-size: x-large;
+}
+
+.Cities{
+    font-size: medium;
+}
+
+.London:hover{
+    font-size: x-large;
+}
+
+.Paris:hover{
+    font-size: x-large;
+}
+
+.Tokyo:hover{
+    font-size: x-large;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+    <span>
+        <img class="London-img" src="https://wallpaper.dog/large/5488118.jpg" alt="London" width="750px" height="500px"> 
+        <h2>TOKYO</h2>
+    </span>
+</header>
+    
+
+<section>
+  <nav>
+    <ul class="Cities">
+      <li><a class="London" href="London.html">London</a></li><br><br>
+      <li><a class="Paris" href="Paris.html">Paris</a></li><br><br>
+      <li><a class="Tokyo" href="Tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 class="London-text">Tokyo</h1>
+    <p>Tokyo is the capital and most populous city of Japan. Tokyo's metropolitan area (including neighboring prefectures, 13,452 square kilometers or 5,194 square miles) is the most populous in the world, with an estimated 37.468 million residents as of 2018; although this number has been gradually decreasing since then, the prefecture itself has a population of 14.09 million people while the city's central 23 special wards have a population of 9.73 million. Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central coast of Honshu, Japan's largest island. Tokyo serves as Japan's economic center and is the seat of both the Japanese government and the Emperor of Japan.</p>
+  </article>
+</section>
+
+<footer>
+  <p class="footer" style="font-size: 20px;"><b>KodeGo ~ Renz Sayaman</b></p>
+</footer>
+
+</body>
+</html>
+

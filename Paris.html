@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CITIES │ Paris</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cities-img{
+    border-radius: 10px;
+    filter: none;
+}
+
+/* Style the header */
+header {
+  background: url(https://c4.wallpaperflare.com/wallpaper/688/74/554/paris-tower-architecture-france-wallpaper-preview.jpg);
+  background-size: cover;
+  backdrop-filter: blur(50px);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}   
+
+article {
+  float: left;
+  padding: 20px;
+  margin-left: 70px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  border: #dd3030 medium;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dd3030;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+
+
+.London-text{
+    font-size: x-large;
+}
+
+.Cities{
+    font-size: medium;
+}
+
+.London:hover{
+    font-size: x-large;
+}
+
+.Paris:hover{
+    font-size: x-large;
+}
+
+.Tokyo:hover{
+    font-size: x-large;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+    <div>
+        <img class="cities-img" src="https://c4.wallpaperflare.com/wallpaper/688/74/554/paris-tower-architecture-france-wallpaper-preview.jpg" alt="London" width="750px" height="500px"> 
+        <h2>PARIS</h2>
+    </div>
+</header>
+    
+
+<section>
+  <nav>
+    <ul class="Cities">
+      <li><a class="London" href="London.html">London</a></li><br><br>
+      <li><a class="Paris" href="Paris.html">Paris</a></li><br><br>
+      <li><a class="Tokyo" href="Tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 class="London-text">Paris</h1>
+    <p>Paris is the capital and most populous city of France, with an official estimated population of 2,102,650 residents as of 1 January 2023[2] in an area of more than 105 km2 (41 sq mi),[5] making it the fourth-most populated city in the European Union as well as the 30th most densely populated city in the world in 2022.[6] Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, culture, fashion, gastronomy and many areas. For its leading role in the arts and sciences, as well as its early and extensive system of street lighting, in the 19th century, it became known as "the City of Light".</p>
+  </article>
+</section>
+
+<footer>
+  <p class="footer" style="font-size: 20px;"><b>KodeGo ~ Renz Sayaman</b></p>
+</footer>
+
+</body>
+</html>
+
