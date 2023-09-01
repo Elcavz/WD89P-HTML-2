@@ -4,6 +4,7 @@
 <title>CITIES │ London</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
@@ -37,6 +38,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin-left: 10px;
+  font-family: montserrat;
 }   
 
 article {
@@ -58,10 +60,11 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #dd3030;
-  padding: 10px;
-  text-align: center;
+  background-color: #908888;
+  padding: 1px;
   color: white;
+  display: flex;
+  width: 100%;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -90,17 +93,52 @@ footer {
     font-size: medium;
 }
 
+a.Main:hover {
+  font-size: x-large;
+  transition: .5s;
+  text-decoration: underline;
+  opacity: 100%;
+}
+
 .London:hover{
     font-size: x-large;
+    transition: .5s;
+    text-decoration: underline;
+    opacity: 100%;
 }
 
 .Paris:hover{
     font-size: x-large;
+    transition: .5s;
+    text-decoration: underline;
+    opacity: 100%;
 }
 
 .Tokyo:hover{
     font-size: x-large;
+    transition: .5s;
+    text-decoration: underline;
+    opacity: 100%;
 }
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  opacity: 75%;
+}
+
+footer p {
+  margin-left: 150px;
+}
+
+footer ul li {
+  text-decoration: none;
+  list-style: none;
+  display: contents;
+
+}
+
+
 </style>
 </head>
 <body>
@@ -118,6 +156,7 @@ footer {
 <section>
   <nav>
     <ul class="Cities">
+      <li><a class="Main" href="main.html">Main Page</a></li><br><br>
       <li><a class="London" href="London.html">London</a></li><br><br>
       <li><a class="Paris" href="Paris.html">Paris</a></li><br><br>
       <li><a class="Tokyo" href="Tokyo.html">Tokyo</a></li>
@@ -132,7 +171,12 @@ footer {
 </section>
 
 <footer>
-  <p class="footer" style="font-size: 20px;"><b>KodeGo ~ Renz Sayaman</b></p>
+  <p class="footer" style="font-size: 15px;"><b>Copyright © 2023 │ CITIES . All rights reserved.</b></p>
+  <ul>
+    <li><a href="">About Us</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Privacy</a></li>
+  </ul>
 </footer>
 
 </body>
