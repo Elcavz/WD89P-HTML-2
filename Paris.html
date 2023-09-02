@@ -10,6 +10,8 @@
     box-sizing: border-box;
   }
   
+  
+  
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -22,6 +24,7 @@
     text-align: center;
     font-size: 35px;
     color: white;
+    height: 100vh;
   }
   
   /* Create two columns/boxes that floats next to each other */
@@ -128,7 +131,8 @@
   }
   
   footer p {
-    margin-left: 150px;
+    text-align: center;
+    width: 50%;
   }
   
   footer ul li {
@@ -138,7 +142,35 @@
   
   }
   
+  h2 {
+    color: black;
+    font-family: montserrat;
+  }
   
+  .text-footer {
+    margin-left: auto;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+  }
+  
+  .footer-li {
+    margin: 0 25px;
+  }
+  
+  .footer-li:hover {
+    background: white;
+    padding: 7px 13px;
+    border-radius: 7px;
+  }
+  
+  ul {
+    width: auto;
+  }
+  
+  .footer-ul {
+    padding: 0;
+  }
   </style>
 </head>
 <body>
@@ -170,11 +202,13 @@
 
 <footer>
   <p class="footer" style="font-size: 15px;"><b>Copyright © 2023 │ CITIES . All rights reserved.</b></p>
-  <ul>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Services</a></li>
-    <li><a href="">Privacy</a></li>
-  </ul>
+    <div class="text-footer">
+      <ul class="footer-ul">
+        <li><a class="footer-li" href="">About Us</a></li>
+        <li><a class="footer-li" href="">Services</a></li>
+        <li><a class="footer-li" href="">Privacy</a></li>
+      </ul>
+    </div>
 </footer>
 
 </body>

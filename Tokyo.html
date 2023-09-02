@@ -6,9 +6,177 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background: url(https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80);
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 100vh;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+  font-family: montserrat;
+}   
+
+article {
+  float: left;
+  padding: 20px;
+  margin-left: 70px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  border: #dd3030 medium;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #908888;
+  padding: 1px;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.London-img{
+    border-radius: 10px;
+}
+
+.London-text{
+    font-size: x-large;
+}
+
+.Cities{
+    font-size: medium;
+}
+
+a.Main:hover {
+  font-size: x-large;
+  transition: .5s;
+  text-decoration: underline;
+  opacity: 100%;
+}
+
+.London:hover{
+    font-size: x-large;
+    transition: .5s;
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+.Paris:hover{
+    font-size: x-large;
+    transition: .5s;
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+.Tokyo:hover{
+    font-size: x-large;
+    transition: .5s;
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  opacity: 75%;
+}
+
+footer p {
+  text-align: center;
+  width: 50%;
+}
+
+footer ul li {
+  text-decoration: none;
+  list-style: none;
+  display: contents;
+
+}
+
+h2 {
+  color: black;
+  font-family: montserrat;
+}
+
+.text-footer {
+  margin-left: auto;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.footer-li {
+  margin: 0 25px;
+}
+
+.footer-li:hover {
+  background: white;
+  padding: 7px 13px;
+  border-radius: 7px;
+}
+
+ul {
+  width: auto;
+}
+
+.footer-ul {
+  padding: 0;
+}
+</style><style>
   * {
     box-sizing: border-box;
   }
+  
+  
   
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +190,7 @@
     text-align: center;
     font-size: 35px;
     color: white;
+    height: 100vh;
   }
   
   /* Create two columns/boxes that floats next to each other */
@@ -128,7 +297,8 @@
   }
   
   footer p {
-    margin-left: 150px;
+    text-align: center;
+    width: 50%;
   }
   
   footer ul li {
@@ -138,7 +308,35 @@
   
   }
   
+  h2 {
+    color: black;
+    font-family: montserrat;
+  }
   
+  .text-footer {
+    margin-left: auto;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+  }
+  
+  .footer-li {
+    margin: 0 25px;
+  }
+  
+  .footer-li:hover {
+    background: white;
+    padding: 7px 13px;
+    border-radius: 7px;
+  }
+  
+  ul {
+    width: auto;
+  }
+  
+  .footer-ul {
+    padding: 0;
+  }
   </style>
 </head>
 <body>
@@ -170,11 +368,13 @@
 
 <footer>
   <p class="footer" style="font-size: 15px;"><b>Copyright © 2023 │ CITIES . All rights reserved.</b></p>
-  <ul>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Services</a></li>
-    <li><a href="">Privacy</a></li>
-  </ul>
+    <div class="text-footer">
+      <ul class="footer-ul">
+        <li><a class="footer-li" href="">About Us</a></li>
+        <li><a class="footer-li" href="">Services</a></li>
+        <li><a class="footer-li" href="">Privacy</a></li>
+      </ul>
+    </div>
 </footer>
 
 </body>
